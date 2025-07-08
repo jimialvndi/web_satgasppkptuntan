@@ -7,57 +7,62 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+# Website Satgas PPKPT Universitas Tanjungpura
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Website ini adalah platform digital resmi untuk Satuan Tugas Pencegahan dan Penanganan Kekerasas (Satgas PPK) Universitas Tanjungpura. Tujuan utama dari website ini adalah untuk menyediakan informasi, edukasi, dan layanan pelaporan terkait kekerasan di lingkungan kampus.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Pengembang Awal
 
-## Learning Laravel
+Proyek ini pertama kali dikembangkan dan dibangun oleh:
+- **[Jimi Alvandi Mahendra](https://github.com/jimialvndi)**
+- (Silahkan tambahkan nama anda disini jika anda menjadi developer selanjutnya)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+---
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## ✨ Fitur-fitur Utama
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Berdasarkan kode yang ada, berikut adalah fitur-fitur yang telah diimplementasikan:
 
-## Laravel Sponsors
+### 🌐 Halaman Publik (Frontend)
+* **Beranda:** Halaman utama dengan *Hero Section* yang dinamis.
+* **Tentang Kami:** Halaman yang menampilkan informasi mengenai Satgas PPKS.
+* **Struktur Tim:** Menampilkan anggota tim Satgas PPKS.
+* **Artikel:** Sistem blog untuk publikasi artikel edukasi, lengkap dengan halaman detail dan fitur berbagi ke media sosial.
+* **Program Kerja:** Menampilkan daftar program kerja atau kegiatan yang akan/telah dilaksanakan.
+* **Materi Edukasi:** Halaman untuk mengunduh atau melihat materi-materi edukasi.
+* **Lapor!:** Formulir aduan bagi pengguna untuk melaporkan insiden secara daring.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### 🔐 Panel Admin (Backend)
+* **Dashboard Utama:** Halaman ringkasan untuk admin.
+* **Manajemen Pengguna (User):** Operasi CRUD (Create, Read, Update, Delete) untuk mengelola pengguna.
+* **Manajemen Peran & Hak Akses (Roles & Permissions):** Mengelola peran (seperti Super-Admin, Admin) dan hak aksesnya untuk setiap fitur.
+* **Manajemen Konten:**
+    * CRUD untuk **Hero Section**.
+    * CRUD untuk **Artikel**.
+    * CRUD untuk **Program Kerja**.
+    * CRUD untuk **Materi Edukasi**.
+    * CRUD untuk **Halaman Tentang Kami**.
+    * CRUD untuk **Anggota Tim**.
+* **Manajemen Laporan:** Melihat dan mengelola laporan yang masuk dari publik.
+* **Rich Text Editor:** Menggunakan Trix Editor untuk memudahkan penulisan konten seperti artikel dan program kerja, termasuk fitur unggah gambar.
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+## 💻 Teknologi yang Digunakan
 
-## Contributing
+Proyek ini dibangun menggunakan tumpukan teknologi modern, antara lain:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-
-<!-- JIMI ALVIANDI MAHENDRA UNIVERSITAS TANJUNGPURA -->
+* **Backend:**
+    * [PHP](https://www.php.net/)
+    * [Laravel Framework](https://laravel.com/)
+* **Frontend:**
+    * [Vite](https://vitejs.dev/) - *Build tool* aset frontend.
+    * [Tailwind CSS](https://tailwindcss.com/) - Kerangka kerja CSS.
+    * [Alpine.js](https://alpinejs.dev/) - Kerangka kerja JavaScript minimalis.
+* **Database:**
+    * MySQL / MariaDB (sesuai konfigurasi Laravel).
+* **Paket Utama:**
+    * `spatie/laravel-permission`: Untuk manajemen peran dan hak akses.
+    * [Laravel Breeze](https://laravel.com/docs/starter-kits#laravel-breeze) - Untuk sistem otentikasi dan *scaffolding* UI
